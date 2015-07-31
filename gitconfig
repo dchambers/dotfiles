@@ -1,0 +1,27 @@
+[user]
+	email = dominic.chambers@gmail.com
+	name = dchambers
+[push]
+	default = simple
+
+[merge]
+	tool = p4merge
+
+[mergetool "p4merge"]
+	cmd = /opt/p4v/bin/p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+
+[mergetool]
+	keepBackup = false
+
+[diff]
+	tool = p4mergetool
+
+[difftool "p4mergetool"]
+	cmd = /opt/p4v/bin/p4merge $LOCAL $REMOTE
+
+[alias]
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
