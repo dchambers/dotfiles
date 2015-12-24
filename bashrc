@@ -121,3 +121,7 @@ export NVM_DIR="/home/dominicc/.nvm"
 
 export PATH=node_modules/.bin:$PATH
 
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle
+export JAVA7_HOME=/usr/lib/jvm/java-7-oracle
+export JAVA8_HOME=/usr/lib/jvm/java-8-oracle
+
